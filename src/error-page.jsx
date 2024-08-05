@@ -1,6 +1,7 @@
 import { useRouteError } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { Header, Footer } from "./components";
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
 
 export default function ErrorPage() {
   const error = useRouteError();
