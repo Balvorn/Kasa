@@ -1,7 +1,10 @@
+import Banner from "../components/banner/banner";
+import background from '../assets/background2.png'
+
 export default function About() {
     return (
         <>
-            <h1>About Page</h1>
+            <Banner img={background}/>
         </>
     )
 }

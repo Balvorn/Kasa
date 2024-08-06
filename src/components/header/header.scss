@@ -1,17 +1,43 @@
-header{
- padding: 45px;
- display: flex;
- height: 68px;
- justify-content:space-between;
- align-items: center;
+header {
+    padding: 45px;
+    display: flex;
+    height: 68px;
+    justify-content: space-between;
+    align-items: center;
 }
-#links{
+
+#links {
     display: flex;
     justify-content: space-between;
     width: 280px;
     font-size: 24px;
     font-weight: 500;
 }
-a.active{
+
+a.active {
     text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    header {
+        padding: 20px;
+        display: flex;
+        height: 68px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        height: 47px;
+        width: 147px;
+    }
+
+    #links {
+        width: 120px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
 }

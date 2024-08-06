@@ -12,8 +12,14 @@ footer {
 }
 
 p {
-  width: 40%;
+  width: 50%;
   text-align: center;
+}
+
+@media only screen and (max-width: 992px) {
+  footer {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */

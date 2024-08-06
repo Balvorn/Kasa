@@ -1,3 +1,32 @@
+article {
+  position: relative;
+  height: 350px;
+}
 
+article img {
+  border-radius: 10px;
+  height: 100%;
+  object-fit: cover;
+}
+
+article h2 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  width: 80%;
+}
+
+@media only screen and (max-width: 992px) {
+  article {
+    height: 250px;
+    border-radius: 10px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
 
 /*# sourceMappingURL=housingCard.css.map */
