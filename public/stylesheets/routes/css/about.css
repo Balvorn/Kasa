@@ -1,0 +1,18 @@
+.collapse-list {
+  margin: 0 auto;
+  width: 85%;
+}
+.collapse-list li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  .collapse-list {
+    width: 100%;
+  }
+  .collapse-list li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

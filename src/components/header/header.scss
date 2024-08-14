@@ -27,17 +27,18 @@ a.active {
         height: 68px;
         justify-content: space-between;
         align-items: center;
+        .logo {
+            height: 47px;
+            width: 147px;
+        }
+    
+        #links {
+            width: 120px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    
     }
 
-    .logo {
-        height: 47px;
-        width: 147px;
-    }
-
-    #links {
-        width: 120px;
-        font-size: 12px;
-        font-weight: 500;
-    }
 
 }

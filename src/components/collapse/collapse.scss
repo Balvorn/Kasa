@@ -1,0 +1,55 @@
+.collapse {
+    background-color: #FF6060;
+    color: white;
+    padding: 18px;
+    text-align: left;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    overflow: hidden;
+    background-color: #F6F6F6;
+    border-radius: 0 0 5px 5px;
+
+    p {
+        margin: 0 auto;
+        width: calc(100% - 40px);
+        transition: all 0.5s ease;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+    }
+}
+
+.display {
+    padding: 20px 0;
+    max-height: 165px;
+}
+
+.hidden {
+    padding: 0;
+    max-height: 0px;
+
+}
+
+@media only screen and (max-width: 992px) {
+    .collapse {
+        font-size: 12px;
+        padding: 8px 18px;
+    }
+
+    .content {
+        p {
+            font-size: 12px;
+        }
+    }
+    .display{
+        padding: 15px 0;
+    }
+}

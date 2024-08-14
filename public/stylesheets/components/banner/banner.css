@@ -5,7 +5,6 @@
   align-items: center;
   margin-bottom: 45px;
 }
-
 .banner img {
   height: 223px;
   width: 100%;
@@ -14,8 +13,7 @@
   filter: brightness(50%);
   border-radius: 25px;
 }
-
-h1 {
+.banner h1 {
   position: absolute;
   font-weight: 700;
   font-size: 48px;
@@ -26,11 +24,14 @@ h1 {
 }
 
 @media only screen and (max-width: 992px) {
+  .banner {
+    margin-bottom: 20px;
+  }
   .banner img {
     height: 111px;
     border-radius: 10px;
   }
-  h1 {
+  .banner h1 {
     font-size: 24px;
   }
 }

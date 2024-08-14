@@ -26,11 +26,11 @@ a.active {
     justify-content: space-between;
     align-items: center;
   }
-  .logo {
+  header .logo {
     height: 47px;
     width: 147px;
   }
-  #links {
+  header #links {
     width: 120px;
     font-size: 12px;
     font-weight: 500;
