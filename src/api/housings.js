@@ -1,4 +1,4 @@
-const logements = [
+const getHousings = () => [
     {
         "id": "c67ab8a7",
         "title": "Appartement cosy",
@@ -618,4 +618,8 @@ const logements = [
     }
 ]
 
-export default logements
+export async function getHousing(id) {
+    return getHousings().find(housing => housing.id == id)
+}
+
+export default getHousings;

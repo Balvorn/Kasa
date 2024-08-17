@@ -1,0 +1,115 @@
+.carousel {
+  position: relative;
+  height: 415px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.carousel img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.carousel .control {
+  position: absolute;
+  top: calc(50% - 40px);
+  width: 80px;
+  cursor: pointer;
+}
+.carousel .left {
+  left: 0px;
+  rotate: -90deg;
+}
+.carousel .right {
+  right: 0px;
+  rotate: 90deg;
+}
+.carousel .index {
+  position: absolute;
+  width: 30px;
+  bottom: 25px;
+  margin: 0 calc(50% - 15px);
+  color: white;
+}
+
+.housing-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.housing-info .info-block1 {
+  width: 50%;
+}
+.housing-info .info-block1 h1 {
+  color: #FF6060;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.housing-info .info-block1 p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.housing-info .info-block1 div {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #FF6060;
+  color: white;
+  height: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 10px;
+  margin-bottom: 24px;
+  padding: 0 5px;
+  min-width: 115px;
+}
+.housing-info .info-block2 {
+  width: 50%;
+}
+.housing-info .info-block2 .host {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top: 10px;
+}
+.housing-info .info-block2 .host div {
+  display: flex;
+  flex-direction: column;
+  color: #FF6060;
+  justify-content: right;
+  font-size: 18px;
+}
+.housing-info .info-block2 .host div span {
+  text-align: right;
+}
+.housing-info .info-block2 .host img {
+  border-radius: 50%;
+  height: 64px;
+  margin-left: 10px;
+}
+.housing-info .info-block2 .rating {
+  text-align: right;
+  margin-top: 21px;
+}
+.housing-info .info-block2 .rating .star {
+  filter: invert(100%) sepia(5%) saturate(581%) hue-rotate(217deg) brightness(118%) contrast(78%);
+}
+.housing-info .info-block2 .rating .colored {
+  filter: invert(74%) sepia(54%) saturate(6467%) hue-rotate(322deg) brightness(101%) contrast(111%);
+}
+.housing-info .info-block2 .rating :not(:last-child) {
+  margin-right: 5px;
+}
+.housing-info .collapses {
+  display: flex;
+  justify-content: space-between;
+}
+.housing-info .collapses .width-adjust {
+  width: 45%;
+}
+.housing-info .collapses .width-adjust .collapse {
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=annonce.css.map */

@@ -18,7 +18,7 @@ export default function About() {
             <ul className="collapse-list">
                 {Object.keys(sections).map((key, index) => (
                     <li key={index}>
-                        <Collapse title={key} text={sections[key]} />
+                        <Collapse title={key} text={[sections[key]]} />
                     </li>
                 ))}
             </ul>

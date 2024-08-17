@@ -105,7 +105,7 @@ meter {
     font-family: "Montserrat", sans-serif;
 }
 
-main{
+main{   
     margin: 45px;
 }
 
@@ -115,3 +115,22 @@ main{
     margin: 20px;
 }
 } 
+
+#error-page{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    color: #FF6060;
+    text-align: center;
+    height: 100%;
+    h1{
+        font-size: 288px;
+    }
+    p{
+        font-size: 36px;
+    }
+    a{
+        color: black;
+    }
+}

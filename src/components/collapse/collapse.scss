@@ -1,7 +1,7 @@
 .collapse {
     background-color: #FF6060;
     color: white;
-    padding: 18px;
+    padding: 10px;
     text-align: left;
     border-radius: 5px;
     font-size: 18px;
@@ -20,10 +20,13 @@
     p {
         margin: 0 auto;
         width: calc(100% - 40px);
-        transition: all 0.5s ease;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        transition: all 0.3s ease;
         font-size: 18px;
+        > :not(:last-child){
+            margin-bottom: 5px;
+        }
     }
 }
 
@@ -36,6 +39,12 @@
     padding: 0;
     max-height: 0px;
 
+}
+.arrow{
+    transition: all 0.3s ease;
+}
+.rotated{
+    transform: rotate(-180deg);
 }
 
 @media only screen and (max-width: 992px) {

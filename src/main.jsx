@@ -8,20 +8,21 @@ import "./index.css";
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import About from "./routes/about";
-import Annonce from "./routes/annonce";
-import Index from "./routes";
+import Annonce, { loader as housingLoader } from "./routes/annonce";
+import Index, { loader as housingsLoader } from "./routes";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root/>,
-    errorElement :<ErrorPage/>,
+    element: <Root />,
+    errorElement: <ErrorPage />,
     children: [
-      { 
+      {
         index: true,
         element: <Index />,
+        loader: housingsLoader,
       },
-      
+
       {
         path: "about",
         element: <About />,
@@ -29,6 +30,7 @@ const router = createBrowserRouter([
       {
         path: "annonce/:annonceId",
         element: <Annonce />,
+        loader: housingLoader,
       },
     ],
   },
