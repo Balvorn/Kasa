@@ -105,32 +105,58 @@ meter {
     font-family: "Montserrat", sans-serif;
 }
 
-main{   
+main {
     margin: 45px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+html, body{
+    height: 100%;
+}
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: stretch;
+}
+
+#error-page {
+    color: #FF6060;
+    text-align: center;
+    height: 100%;
+
+    h1 {
+        font-size: 288px;
+    }
+
+    p {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    a {
+        color: black;
+    }
 }
 
 @media only screen and (max-width: 992px) {
 
-main{
-    margin: 20px;
-}
-} 
+    main {
+        margin: 20px;
+    }
 
-#error-page{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    align-items: center;
-    color: #FF6060;
-    text-align: center;
-    height: 100%;
-    h1{
-        font-size: 288px;
-    }
-    p{
-        font-size: 36px;
-    }
-    a{
-        color: black;
+    #error-page {
+
+        h1 {
+            font-size: 96px;
+        }
+
+        p {
+            font-size: 18px;
+        }
     }
 }

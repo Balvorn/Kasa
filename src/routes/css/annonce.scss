@@ -1,38 +1,43 @@
-
-.carousel{
+.carousel {
     position: relative;
     height: 415px;
     width: 100%;
     margin-bottom: 30px;
-    
-    img{
+
+    img {
         width: 100%;
+        height: 100%;
         object-fit: cover;
         border-radius: 25px;
     }
-    .control{
+
+    .control {
         position: absolute;
         top: calc(50% - 40px);
         width: 80px;
         cursor: pointer;
     }
-    .left{
+
+    .left {
         left: 0px;
         rotate: -90deg;
     }
-    .right{
+
+    .right {
         right: 0px;
         rotate: 90deg;
     }
-    .index{
+
+    .index {
         position: absolute;
         width: 30px;
         bottom: 25px;
-        margin: 0 calc(50% - 15px) ;
+        margin: 0 calc(50% - 15px);
         color: white;
 
     }
 }
+
 .housing-info {
     display: flex;
     justify-content: space-between;
@@ -121,10 +126,82 @@
     .collapses {
         display: flex;
         justify-content: space-between;
+
         .width-adjust {
             width: 45%;
-            .collapse{
+
+            .collapse {
                 border-radius: 10px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .carousel {
+        height: 255px;
+    }
+
+    .housing-info {
+        flex-direction: column;
+
+        .info-block1 {
+            width: 100%;
+
+            h1 {
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+
+            p {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            div {
+                font-size: 10px;
+                min-width: 84px;
+                margin-bottom: 16px;
+            }
+        }
+
+        .info-block2 {
+            width: 100%;
+            position: relative;
+
+            .host {
+                margin: 0;
+
+                div {
+                    font-size: 12px;
+                }
+
+                img {
+                    height: 32px;
+                }
+            }
+
+            .rating {
+                height: 18px;
+                position: absolute;
+                margin: 0;
+                top: calc(50% - 9px);
+            }
+        }
+
+        .collapses {
+            flex-direction: column;
+
+            .width-adjust {
+                width: 100%;
+
+                margin-top: 20px;
+
+                .collapse {
+                    border-radius: 10px;
+
+                }
             }
         }
     }
