@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import './header.scss'
 
 export default function Header() {
+    let vw = Math.max(document.documentElement.clientWidth || 0)
     return (
         <>
             <header>
@@ -10,10 +11,10 @@ export default function Header() {
                 <nav>
                     <ul id="links">
                         <li>
-                            <NavLink to={`/`}>Accueil</NavLink>
+                            <NavLink to={`/`}>{vw > 992 ? "Accueil" : "ACCUEIL"}</NavLink>
                         </li>
                         <li>
-                            <NavLink to={`about`}>A propos</NavLink>
+                            <NavLink to={`about`}>{vw > 992 ? "A propos" : "A PROPOS"}</NavLink>
                         </li>
                     </ul>
                 </nav>

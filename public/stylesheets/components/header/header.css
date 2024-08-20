@@ -5,6 +5,9 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+header img {
+  max-width: 30%;
+}
 
 #links {
   display: flex;
@@ -22,16 +25,15 @@ a.active {
   header {
     padding: 20px;
     display: flex;
-    height: 68px;
+    height: 47px;
     justify-content: space-between;
     align-items: center;
   }
   header .logo {
     height: 47px;
-    width: 147px;
   }
   header #links {
-    width: 120px;
+    width: 140px;
     font-size: 12px;
     font-weight: 500;
   }

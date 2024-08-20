@@ -47,7 +47,6 @@ export default function Annonce() {
             </div>
         );
     };
-    console.log(parseInt(housing.rating));
     return (
         <>
             {Carousel()}
