@@ -2,9 +2,8 @@ import { useLoaderData } from "react-router-dom";
 import { getHousing } from "../api/housings";
 import Collapse from "../components/collapse/collapse";
 import star from "../assets/star.svg"
-import arrow from "../assets/arrow.svg"
 import './css/annonce.scss'
-import { useState } from 'react';
+import Carousel from "../components/carousel/carousel";
 
 export async function loader({ params }) {
     const housing = await getHousing(params.annonceId);
@@ -20,36 +19,9 @@ export async function loader({ params }) {
 export default function Annonce() {
     const { housing } = useLoaderData();
 
-    const Carousel = () => {
-        const [index, setIndex] = useState(0);
-        const length = housing.pictures.length;
-        const handlePrevious = () => {
-            const newIndex = index - 1;
-            setIndex(newIndex < 0 ? length - 1 : newIndex);
-        };
-
-        const handleNext = () => {
-            const newIndex = index + 1;
-            setIndex(newIndex >= length ? 0 : newIndex);
-        };
-
-        return (
-            <div className="carousel">
-                <img src={housing.pictures[index]} alt="photo du logement" />
-                {length > 1 && <>
-                    <button className="control left" onClick={handlePrevious}><img src={arrow} alt="previous" /></button>
-                    <button className="control right" onClick={handleNext}><img src={arrow} alt="previous" /></button>
-                    <p className="index">{index+1}/{length}</p>
-                </>
-                }
-
-
-            </div>
-        );
-    };
     return (
         <>
-            {Carousel()}
+            <Carousel pictures={housing.pictures} />
             <div className="housing-info">
                 <div className="info-block1">
                     <h1>{housing.title}</h1>
